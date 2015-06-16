@@ -1,0 +1,12 @@
+// @file _transparent.sass
+
+// transparent
+=transparent($opacity)
+  /* internet explorer */
+  filter: alpha(opacity=$opacity*10)
+  /* khtml, old safari */
+  -khtml-opacity: $opacity
+  /* mozilla, netscape */
+  -moz-opacity: $opacity
+  /* fx, safari, opera */
+  opacity: $opacity
