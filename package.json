@@ -9,6 +9,7 @@
   "author": "astyfx (astyfx@gmail.com)",
   "license": "MIT",
   "dependencies": {
+    "del": "^1.2.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3"
   },

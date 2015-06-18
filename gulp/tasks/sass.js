@@ -12,7 +12,7 @@ gulp.task('sass', function () {
   sass(config.src, {style: 'expanded'}) // compile sass
       .pipe(plumber()) // proceed when error
       .pipe(concat(config.output))  // merge to one file
-      .pipe(autoprefixer(config.autoprefixer)) // vender-prefix
+      //.pipe(autoprefixer(config.autoprefixer)) // vender-prefix
       .pipe(gulpif(config.minify, minify())) // if needed minify
       .pipe(gulp.dest(config.dest)); // output
 });

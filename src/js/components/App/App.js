@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
         <div className="app">
           <header className="header">
-            <Navigation appName="React-Start Kit"/>
+            <Navigation appName="React-Start-Kit"/>
           </header>
           <div className="page">
             <RouteHandler/>

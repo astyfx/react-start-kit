@@ -1,12 +1,14 @@
 // @file core.sass
 *
   +box-sizing(border-box)
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-  font-size: 16px
 
 *:before,
 *:after
   +box-sizing(border-box)
+
+html
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  font-size: 62.5%
 
 body
   font-family: 'Noto-Sans', 'Apple SD Gothic Neo', NanumGothic, 'Malgun Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -18,8 +20,7 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   font-weight: 400
-  font-size: 16px
-  font-size: 1.6rem
+  +font-size(16)
   line-height: $lineHeight-base
 
 a
@@ -49,3 +50,7 @@ h4,
 h5,
 h6
   font-weight: 700
+
+*::selection
+  background-color: rgb(51, 51, 51)
+  color: rgb(255, 255, 255)

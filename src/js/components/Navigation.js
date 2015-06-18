@@ -13,7 +13,7 @@ class Navigation extends React.Component {
               {this.props.appName}
             </a>
           </div>
-          <ul className="navi">
+          <ul className="navi navi--pull-right">
             <li className="navi__item">
               <Link to="app" className="navi__anchor" activeClassName="navi__anchor--active">Home</Link>
             </li>
